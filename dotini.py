@@ -1,6 +1,6 @@
 content = ""
 def readini(filepath, linenumber):
-    with open(filepath, "r") as file:
+    with open(filepath, "r+") as file:
         text = file.readlines()[linenumber]
         content = text.split(" = ")[1]
     return content
